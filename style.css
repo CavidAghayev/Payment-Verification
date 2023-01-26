@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+    position: relative;
+}   
+.modalShow{
+    width: 420px;
+    height: 240px;
+    background-color: rgb(0, 0, 32);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui;
+    color: white;
+    z-index: 999;
+}
+
+.modalShow i{
+    color: rgb(0, 244, 0);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.modalShow span{
+    font-size: 20px;
+}
+  .card {
+    width: 420px;
+    height: 240px;
+    border-radius: 20px;
+    background-color: gray;
+    position: relative;
+    margin-right: 40px;
+    box-shadow: 1px 5px 5px 1px;
+    cursor: pointer;
+    perspective: 1000px;
+  }
+  .card::after{
+    content: "Payment Verification";
+    position: absolute;
+    top: -60px;
+    left: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 32);
+    font-size: 30px;
+    width: 100%;
+    min-height: 50px;
+    text-align: center;
+  }
+  .names{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .bank-name{
+    display: flex;
+  }
+  
+.bank-name h4{
+    color: white;
+    font-family: system-ui;
+    letter-spacing: 1px;
+}
+  .bank-name i{
+    transform: rotate(90deg);
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .card-name i{
+color: white;
+font-size: 30px;
+}
+.card-number{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: -10px;
+    left: 50px;
+}
+.card-number span{
+    transform: rotate(-90deg);
+    color: white;
+    font-size: 400px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.card-code{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.card-code p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-spacing: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.card-code span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+}
+
+.card-own-name{
+    min-width: 140px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.card-own-name h6{
+color: white;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card-type{
+    position: absolute;
+    bottom: 30px;
+    right: -10px;
+    transform: rotate(-90deg);
+}
+.card-type span{
+    color: white;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 10px;
+font-weight: bold;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+}
+#form input{
+    width: 420px;
+    height: 40px;
+    border: none;
+    border: 1px solid rgb(210, 210, 210);
+    text-indent: 10px;
+    margin: 10px 0;
+    letter-spacing: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#form input:last-child{
+    border: none;
+}
+#form input:last-child:disabled{
+    background-color: rgb(210, 210, 210);
+}
+
+#form label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#form label span{
+    color: red;
+}
+#submit{
+background-color: rgb(0, 0, 32);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+border: none;
+cursor: pointer;
+color: white;
+}

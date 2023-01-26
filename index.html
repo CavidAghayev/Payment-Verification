@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="modalShow">
+        <i class="fa-regular fa-circle-check"></i>
+        <span></span>
+    </div>
+        <div class="card">
+                    <div class="names">
+                        <div class="bank-name">
+                            <h4>Kapital Bank</h4>
+                            <i class="fa-solid fa-wifi"></i>
+                        </div>
+                        <div class="card-name">
+                            <i class="fa-brands fa-cc-visa"></i>
+                        </div>
+                    </div>
+        <div class="card-number">
+            <span>1</span>
+        </div>
+        <div class="card-code">
+            <p>0123 4567 8910 1112</p>
+            <span>01/23</span>
+        </div>
+        <div class="card-own-name">
+            <h6>JAVID AGHAYEV</h6>
+        </div>
+        <div class="card-type">
+            <span>CASH BACK</span>
+        </div>
+          </div>
+          <form id="form" action="#">
+            <label for="name">Name <span>*</span></label>
+            <input minlength="3" maxlength="11" type="text" name="" id="name">
+            <label for="surname">Surname <span>*</span></label>
+            <input min="3" maxlength="11" type="text" name="" id="surname">
+            <label for="cardNumber">Card Number <span>*</span></label>
+            <input minlength="19" maxlength="19" type="" name="" id="cardNumber">
+            <label id="valid" for="valid">Date <span>*</span></label>
+            <input minlength="5" maxlength="5" type="" name="" id="date">
+            <label for="cvv">CVV <span>*</span></label> 
+            <input minlength="3" maxlength="3" type="" name="" id="cvv">
+            <input id="submit" type="submit" name="">
+          </form>
+    <script src="./script.js"></script>
+</body>
+</html>
