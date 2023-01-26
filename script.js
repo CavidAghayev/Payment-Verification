@@ -10,9 +10,6 @@ let modalShow = document.querySelector(".modalShow")
 submit.addEventListener("click", function(e) {
     e.preventDefault();
     modalShow.style.display = "flex"
-    if(document.querySelector(
-        ""
-    ))
     document.querySelector(".card").style.display = "none"
     document.querySelector("form").style.display = "none"
   document.querySelector(".modalShow span").innerHTML = "Ödəniş uğurla həyata keçirildi."
